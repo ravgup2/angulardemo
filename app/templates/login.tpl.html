@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-sm-6">
+    <h1 ng-show="duplicate" class="duplicate">Login</h1>
+        <form role="form" novalidate name="loginForm">
+          <div class="form-group">
+            <label for="name">User ID:</label>
+            <input type="text" name="userId" ng-model="userId" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" name="password" ng-model="password" class="form-control" required >
+            
+          </div>
+          <button type="submit" ng-click="login()" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+    
+    <!-- COLUMN TWO NAMED VIEW -->
+    <div class="col-sm-6">
+    </div>
+
+</div> 

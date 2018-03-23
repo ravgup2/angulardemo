@@ -1,0 +1,16 @@
+<div class="jumbotron">
+	<h1>Inbox</h1>
+</div>
+<div class="row">
+    <div class="col-sm-6">
+    	<button ng-click="getMessage()" class="btn btn-info btn-lg">
+			<span class="glyphicon glyphicon-refresh"></span>
+		</button>
+	    <button href="#" class="btn btn-info btn-lg" ng-click="compose=true">
+		  <span class="glyphicon glyphicon-pencil"></span> Compose 
+		</button>
+		<compose-form data-compose="compose" data-id="userId" send="setMessage(message)"></compose-form>
+    </div>   
+</div>
+<br />
+<message-list data-msgs="messages"></message-list>

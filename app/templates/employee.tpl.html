@@ -1,0 +1,26 @@
+<div>
+	<h1>Employee List</h1>
+	<div class="row">
+		<div class="form-group col-sm-2">
+			<label for="search">Search:</label>
+	    	<input type="search" class="form-control" ng-model="filterBy.search">
+		</div>
+		
+	</div>
+
+	<div class="row">
+	<div class="col-sm-4">
+		<ul>
+			<li ng-repeat="employee in employees | filter:filterBy.search" >
+				<button class="btn-success"  ng-show="employee.important" ng-click="toggleImp(employee)">Important</button>
+				<button class="btn-danger" ng-show="!employee.important" ng-click="toggleImp(employee)">Un-Important</button>
+				<span ng-class="{ 'emp-data': employee.important }">
+					{{employee.name}}
+					<label class="label-default">{{employee.age}}</label>
+					{{employee.joiningDate | date:medium}}
+				</span>
+			</li>
+		</ul>
+	</div>
+	</div>
+</div>

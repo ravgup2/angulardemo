@@ -1,0 +1,16 @@
+<form novalidate ng-show="compose">
+  <fieldset class="form-group">
+    <label for="to">Email</label>
+    <input type="email" name="to" ng-model="to" class="form-control" placeholder="Email" required>
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" ng-model="subject" class="form-control" placeholder="Enter subject">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="body">Body</label>
+    <textarea class="form-control" rows="5" name="body" ng-model="body" placeholder="Email body" >></textarea>
+  </fieldset>
+  <button type="submit" ng-click="sendMessage()" class="btn btn-primary">Send</button>
+  <button type="submit" ng-click="cancel()" class="btn btn-primary">Cancel</button>
+</form>

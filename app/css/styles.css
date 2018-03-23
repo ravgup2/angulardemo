@@ -1,0 +1,17 @@
+.emp-data {
+	text-decoration: line-through;;
+}
+.not-playing {
+	background-color: #807373
+}
+input.ng-invalid {
+    background-color: red;
+}
+input.ng-valid {
+    background-color: lightgreen;
+}
+.duplicate {
+	background-color: red;
+    padding: 4px;
+    text-align: center;
+}

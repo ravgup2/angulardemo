@@ -1,0 +1,16 @@
+<div>
+	<h1 id="title">Todo Page</h1>
+	<form name="todoForm">
+		<input ng-model="newTask" type="text" required />
+		<button ng-click="addTodo()">Add Task</button>
+	</form>
+	<ul>
+		<li ng-repeat="task in tasks" >
+			{{task.name}}
+			<button ng-click="editItem(task)" >Edit</button>
+			<input type="text" ng-model="task.name" ng-show="task.editing" />
+			<button ng-click="saveTask(task)" ng-show="task.editing">Save</button>
+			<button ng-click="deleteItem($index)" >Delete</button>
+		</li>
+	</ul>
+</div>

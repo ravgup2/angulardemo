@@ -1,0 +1,23 @@
+{
+  "name": "ls",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ravigupta87 <ravi.gupta@accionlabs.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6",
+    "ng-lodash": "^0.4.0"
+  }
+}
